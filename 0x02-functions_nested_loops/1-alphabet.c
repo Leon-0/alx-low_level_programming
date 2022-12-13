@@ -16,7 +16,7 @@ int main(void)
 	{
 		_putchar(count);
 	}
-	_putchar("/n");
+	_putchar('\n');
 
 	return (0);
 }
