@@ -12,7 +12,7 @@
 int main(void)
 {
 	int count;
-	int text[] = "_putchar";
+	char text[] = "_putchar";
 
 	for (count=0; count<8; count++)
 	{
