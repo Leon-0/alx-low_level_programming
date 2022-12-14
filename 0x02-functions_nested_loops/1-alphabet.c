@@ -1,11 +1,8 @@
 #include "main.h"
 
 /**
- * main - Start of code
+ * print_alphabet - uses -putchar and a for loop to print the alphabet
  *
- * Description: Prints the alphabet in lowercase followed by a new line
- *
- * Return: Always returns 0
  */
 
 void print_alphabet(void)
