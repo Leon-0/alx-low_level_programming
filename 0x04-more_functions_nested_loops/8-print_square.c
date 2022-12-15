@@ -1,10 +1,10 @@
 #include"main.h"
 
 /**
- * print_square - print a square using the character #
- *
+ * print_square - print a square using #
+ * @row: is the width of the square
  * @size: is the size of the square
- *
+ * @column: is the height of the square
  * Return: Always 0 (Success)
 */
 
