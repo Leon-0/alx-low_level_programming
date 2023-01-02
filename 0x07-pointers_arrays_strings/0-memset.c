@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _memset - replaces the first bytes with a constant
  * @s: memory area
