@@ -8,30 +8,44 @@
 
 int _sqrt_recursion(int n)
 {
-return (square(n, 1));
+    return square_root_helper(x, 0, x);
 }
 
+
 /**
- * square - find square root
+ * square_root_helper - find square root
  * @n: int to find square root
- * @val: square root
+ * @low: the lower bound of the search range
+ * @high: the upper bound of the search range
  * Return: int
  */
 
-int square(int n, int val)
-{
 
-if (val * val == n)
+int square_root_helper(int n, int low, int high)
 {
-	return (val);
-}
-else if (val * val < n)
-{
-	return  (square(n, val + 1));
-}
-else
-{
-	return (-1);
+    if (low > high)
+    {
+        return -1;
+    }
+
+    int mid = (low + high) / 2;
+    int mid_squared = mid * mid;
+
+    if (mid_squared == n)
+    {
+        return mid;
+    }
+    else if (mid_squared > n)
+    {
+        return square_root_helper(n, low, mid - 1);
+    }
+    else
+    {
+        return square_root_helper(n, mid + 1, high);
+    }
 }
 
-}
+
+
+
+
