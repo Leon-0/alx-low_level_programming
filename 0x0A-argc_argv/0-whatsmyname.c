@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints program name 
+ * main - Prints program name
  * @argc: int
  * @argv: list
  * Return: zero
