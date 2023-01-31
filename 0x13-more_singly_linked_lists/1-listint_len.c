@@ -2,16 +2,16 @@
 #include <stdio.h>
 
 /**
- * list_len -  returns the number of elements in a linked list_t list.
+ * listint_len - returns the number of elements in a linked list `listint_t`.
  * @h: linked list
  *
  * Return: number of elements
  */
 
-size_t list_len(const list_t *h)
+size_t listint_len(const listint_t *h)
 {
 	size_t nbr_element = 0;
-	const list_t *current = h;
+	const listint_t *current = h;
 
 	while (current != NULL)
 	{
