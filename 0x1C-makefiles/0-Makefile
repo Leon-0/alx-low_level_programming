@@ -2,3 +2,5 @@ school: main.c
 	gcc -o school main.c
 
 all: school
+
+.PHONY: all
