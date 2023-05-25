@@ -1,0 +1,10 @@
+# Makefile for building the 'school' executable
+
+CC = gcc
+SRC = $(wildcard *.c)
+
+school: $(SRC)
+	$(CC) $(SCR) -o school
+
+clean:
+	rm -f school
